@@ -15,7 +15,7 @@ const ArticleList: React.FC = () => {
                 {listArticles.map(article => (
                     <Card key={article.url}>
                         <Card.Content>
-                            <Image src={article.multimedia[0].url} alt={article.multimedia[0].caption} size="small" centered />
+                            <Image src={article.thumbnail_standard} size="small" centered />
                             <Card.Header><h3>{article.title}</h3></Card.Header>
                             <Card.Meta>{article.byline}</Card.Meta>
                             <Card.Description>{article.abstract}</Card.Description>
