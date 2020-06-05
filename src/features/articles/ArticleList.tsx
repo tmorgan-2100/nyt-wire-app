@@ -10,7 +10,6 @@ const ArticleList: React.FC = () => {
     const { listArticles } = articleStore;
 
     return (
-        <div>
             <Card.Group>
                 {listArticles.map(article => (
                     <Card key={article.url}>
@@ -29,8 +28,6 @@ const ArticleList: React.FC = () => {
                 </Card>
                 ))}
             </Card.Group>
-            
-        </div>
     );
 }
 
